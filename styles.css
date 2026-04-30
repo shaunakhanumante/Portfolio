@@ -45,6 +45,7 @@ li {
 }
 
 .carosuel{
+    position: relative;
     padding-top: 20px;
     text-align: center;
     height: 500px;
@@ -55,4 +56,28 @@ h2{
     color: rgb(232, 104, 12);
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.left_arrow, .right_arrow {
+    position: absolute;
+    top: 50%;                
+    transform: translateY(-50%); 
+    
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    color: rgb(232, 104, 12);        
+    font-size: 5rem;      
+    font-weight: bold;
+    transition: 0.3s;       
+}
+
+.left_arrow{
+   left: 50px;
+}
+
+.right_arrow{
+    right: 50px;
 }
