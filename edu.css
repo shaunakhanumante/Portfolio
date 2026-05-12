@@ -1,3 +1,6 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
 body{
     margin: 0px;
     background-color: black;
@@ -8,10 +11,34 @@ body{
     height: 5%;
 }
 
+h1{
+    font-size: 90px;
+    color: rgb(232, 104, 12);
+    justify-self: center;
+}
+
 .buttons{
     display: grid;
-    grid-template-columns: 200px 200px;
-    gap: 10px;
-    margin: 40px;
+    grid-template-columns: 500px 500px;
+    column-gap: 200px;
+    row-gap: 0px;
+    height: calc(100vh - 200px);
+    margin: 0px;
     justify-content: center;
+}
+
+.buttons button{
+    width: 100%;
+    height: 75%;
+    justify-self: center;
+    background-color: rgb(232, 104, 12);
+    font-size: 40px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 20px;
+}
+.buttons button:hover{
+    transform: scale(1.05);
+    opacity: 75%;
+    cursor: pointer;
 }
