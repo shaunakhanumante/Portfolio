@@ -42,3 +42,13 @@ h1{
     opacity: 75%;
     cursor: pointer;
 }
+
+dialog{
+    border-color: gray;
+    background-color: rgb(185, 84, 11);
+    width: 300px;
+}
+
+dialog::backdrop{
+    opacity: 2%;
+}

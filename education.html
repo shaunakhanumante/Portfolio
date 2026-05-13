@@ -22,12 +22,39 @@
             <h1>Education</h1>
 
             <div class = "buttons">
-                <button type = "button" class="Eng">Engineering</button>
+                <button type = "button" id="Eng">Engineering</button>
                 <button type = "button" class="Csc">Programming/Coding</button>
                 <button type = "button" class = "Econ">Business/Finance</button>
                 <button type = "button" class = "Awards">Awards & Recognitions</button>
             </div>
-        </main>
-    </body>
 
+            <dialog id = "EngPop">
+                <h2>Major Specific</h2>
+                <ul>
+                    <li>IE1002: Introduction to Industrial Engineering</li>
+                    <li>IE2400: Methods and Systems Engineering</li>
+                    <li>IE2060: Computing In Industrial Engineering</li>
+                    <li>IE3201: Engineeing Economics</li>
+                    <li>IE3302: Engineering Statistics</li>
+                    <li>IE4362: Advanced Engineering Statistics</li>
+                </ul>
+                <h3>General Engineering</h3>
+                <ul>
+                    <li>CE2450: Statics</li>
+                    <li>ME2733: Material Science</li>
+                </ul>
+                <form method = "dialog">
+                      <button>Close</button>
+                 </form>
+            </dialog>
+
+        </main>
+            <script>
+                const engButton = document.getElementById('Eng');
+                const engDialog = document.getElementById('EngPop');
+                engButton.addEventListener('click', () => {
+                engDialog.showModal(); 
+                 });
+            </script>
+    </body>
 </html>
