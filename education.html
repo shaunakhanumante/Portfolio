@@ -136,6 +136,25 @@
             </dialog>
 
             <!--AWARD POP UP-->
+            <dialog id = "AwardsPop">
+                <h2>University Recognition</h2>
+                <h3>Dean's List</h3>
+                <ul>
+                    <li>Fall 2024</li>
+                    <li>Spring 2025</li>
+                    <li>Fall 2025</li>
+                    <li>Spring 2026</li>
+                </ul>
+
+                <h3>Scholarships</h3>
+                <ul>
+                    <li>Tiger Band Scholarship Recipent (2024, 2025)</li>
+                </ul>
+
+                <form method = "dialog">
+                      <button>Close</button>
+                 </form>
+            </dialog>
 
         </main>
 
@@ -148,9 +167,13 @@
                 const cscDialog = document.getElementById('CscPop');
                 cscButton.addEventListener('click', () => {cscDialog.showModal(); });
 
-                 const econButton = document.getElementById('Econ');
+                const econButton = document.getElementById('Econ');
                 const econDialog = document.getElementById('EconPop');
                 econButton.addEventListener('click', () => {econDialog.showModal();});
+
+                const awardButton = document.getElementById('Awards');
+                const awardDialog = document.getElementById('AwardsPop');
+                awardButton.addEventListener('click', () => {awardDialog.showModal();});
             </script>
 
     </body>
