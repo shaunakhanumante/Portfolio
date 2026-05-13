@@ -13,8 +13,8 @@
         <header>
             <div>
                 <div class = "navbar">
-                    <button id = "Home">Home</button>
-                    <button id = "Edu">Education</button>
+                    <button id = "HomeButton">Home</button>
+                    <button id = "EduButton">Education</button>
                 </div>
             </div>
         </header>
@@ -160,6 +160,14 @@
         </main>
 
             <script>
+                document.getElementById("HomeButton").onclick = function () {
+                window.location.href = "index.html";
+                };
+
+                document.getElementById("EduButton").onclick = function () {
+                window.location.href = "education.html";
+                };
+
                 const engButton = document.getElementById('Eng');
                 const engDialog = document.getElementById('EngPop');
                 engButton.addEventListener('click', () => {engDialog.showModal(); });

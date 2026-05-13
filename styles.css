@@ -3,6 +3,7 @@ body{
     margin: 0px;
     background-color: black;
 }
+
 .navbar{
     display: flex;
     background-color: rgb(232, 104, 12);
@@ -15,6 +16,7 @@ body{
     background-color: black;
     color: white;
     margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .navbar button:hover{

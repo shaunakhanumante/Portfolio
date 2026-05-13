@@ -13,13 +13,13 @@
         <header>
             <div>
                 <div class = "navbar">
-                    <button id = "Home">Home</button>
-                    <button id = "Edu">Education</button>
+                    <button id = "HomeButton">Home</button>
+                    <button id = "EduButton">Education</button>
                 </div>
             </div>
         </header>
-        <main>
 
+        <main>
             <!--Top box w/ name, bullets, headshot-->
             <div  class = "intro">
                 <div>
@@ -62,5 +62,15 @@
             </div>
         </main>
     </body>
+
+    <script>
+        document.getElementById("HomeButton").onclick = function () {
+        window.location.href = "index.html";
+        };
+
+        document.getElementById("EduButton").onclick = function () {
+        window.location.href = "education.html";
+        };
+    </script>
 
 </html>
