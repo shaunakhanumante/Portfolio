@@ -46,7 +46,7 @@ h1{
 dialog{
     border-color: gray;
     background-color: rgb(185, 84, 11);
-    width: 300px;
+    width: 500px;
 }
 
 dialog::backdrop{

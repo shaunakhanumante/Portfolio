@@ -23,30 +23,93 @@
 
             <div class = "buttons">
                 <button type = "button" id="Eng">Engineering</button>
-                <button type = "button" class="Csc">Programming/Coding</button>
-                <button type = "button" class = "Econ">Business/Finance</button>
-                <button type = "button" class = "Awards">Awards & Recognitions</button>
+                <button type = "button" id="Csc">Programming/Coding</button>
+                <button type = "button" id = "Econ">Business/Finance</button>
+                <button type = "button" id = "Awards">Awards & Recognitions</button>
             </div>
 
+            <!--ENGINEERING POP UP-->
             <dialog id = "EngPop">
                 <h2>Major Specific</h2>
                 <ul>
-                    <li>IE1002: Introduction to Industrial Engineering</li>
-                    <li>IE2400: Methods and Systems Engineering</li>
+                    <li>
+                        IE1002: Introduction to Industrial Engineering
+                        <ul>
+                            <li>Projects: Time Study on Sandwhich Shop</li>
+                        </ul>
+                    </li>
+                    <li>
+                        IE2400: Methods and Systems Engineering
+                        <ul>
+                            <li>Projects: Lab Assignments</li>
+                        </ul>
+                    </li>
                     <li>IE2060: Computing In Industrial Engineering</li>
                     <li>IE3201: Engineeing Economics</li>
                     <li>IE3302: Engineering Statistics</li>
-                    <li>IE4362: Advanced Engineering Statistics</li>
+                    <li>
+                        IE4362: Advanced Engineering Statistics
+                        <ul>
+                            <li>Projects: Case Study on Hospital Data</li>
+                        </ul>
+
+                    </li>
                 </ul>
-                <h3>General Engineering</h3>
+
+                <h2>General Engineering</h2>
                 <ul>
                     <li>CE2450: Statics</li>
                     <li>ME2733: Material Science</li>
                 </ul>
+
+                <form method = "dialog">
+                      <button>Close</button>
+                 </form>
+
+            </dialog>
+
+            <!--CSC POP UP-->
+            <dialog id = "CscPop">
+                <h2>Major Specific</h2>
+                <ul>
+                    <li>
+                        IE2060: Computing in Industrial Engineering
+                        <ul>
+                            <li>C#, Python, SQL</li>
+                            <li>Projects: Gym Managment Tool</li>
+                        </ul>                        
+                    </li>
+                </ul>
+
+
+                <h2>Minor Specific</h2>
+                <ul>
+                    <li>
+                        CSC1350: Computer Science I
+                        <ul>
+                            <li>Java</li>
+                            <li>Projects: RNG Game, Tic-Tac-Toe, Lab Assignments</li>
+                        </ul>                        
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        CSC1350: Computer Science II
+                        <ul>
+                            <li>Java</li>
+                            <li>Projects: Lab Assignments</li>
+                        </ul>                        
+                    </li>
+                </ul>                
+
                 <form method = "dialog">
                       <button>Close</button>
                  </form>
             </dialog>
+
+            <!--MONEY POPUP-->
+            <!--AWARD POP UP-->
 
         </main>
             <script>
@@ -54,6 +117,12 @@
                 const engDialog = document.getElementById('EngPop');
                 engButton.addEventListener('click', () => {
                 engDialog.showModal(); 
+                 });
+
+                const cscButton = document.getElementById('Csc');
+                const cscDialog = document.getElementById('CscPop');
+                cscButton.addEventListener('click', () => {
+                cscDialog.showModal(); 
                  });
             </script>
     </body>
