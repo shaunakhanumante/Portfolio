@@ -82,7 +82,7 @@
                 </ul>
 
 
-                <h2>Minor Specific</h2>
+                <h2>Comp. Sci. Minor Specific</h2>
                 <ul>
                     <li>
                         CSC1350: Computer Science I
@@ -95,13 +95,17 @@
 
                 <ul>
                     <li>
-                        CSC1350: Computer Science II
+                        CSC1351: Computer Science II
                         <ul>
                             <li>Java</li>
                             <li>Projects: Lab Assignments</li>
                         </ul>                        
                     </li>
-                </ul>                
+                </ul>  
+                
+                <ul>
+                    <li>CSC2259: Discrete Structures</li>
+                </ul>
 
                 <form method = "dialog">
                       <button>Close</button>
@@ -109,21 +113,45 @@
             </dialog>
 
             <!--MONEY POPUP-->
+            <dialog id = "EconPop">
+                <h2>Business Admin. Minor Specific</h2>
+                <ul>
+                    <li>ACCT2002: Introductory Accounting - Honors</li>
+                    <li>
+                        ECON2030: Economic Principles
+                        <ul>
+                            <li>Transfer Credit from Baton Rouge Community College</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2>Engineering Specific</h2>
+                <ul>
+                    <li>IE3201: Engineering Economics</li>
+                </ul>
+
+                <form method = "dialog">
+                      <button>Close</button>
+                 </form>
+            </dialog>
+
             <!--AWARD POP UP-->
 
         </main>
+
             <script>
                 const engButton = document.getElementById('Eng');
                 const engDialog = document.getElementById('EngPop');
-                engButton.addEventListener('click', () => {
-                engDialog.showModal(); 
-                 });
+                engButton.addEventListener('click', () => {engDialog.showModal(); });
 
                 const cscButton = document.getElementById('Csc');
                 const cscDialog = document.getElementById('CscPop');
-                cscButton.addEventListener('click', () => {
-                cscDialog.showModal(); 
-                 });
+                cscButton.addEventListener('click', () => {cscDialog.showModal(); });
+
+                 const econButton = document.getElementById('Econ');
+                const econDialog = document.getElementById('EconPop');
+                econButton.addEventListener('click', () => {econDialog.showModal();});
             </script>
+
     </body>
 </html>
