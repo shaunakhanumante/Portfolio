@@ -15,6 +15,7 @@
                 <div class = "navbar">
                     <button id = "HomeButton">Home</button>
                     <button id = "EduButton">Education</button>
+                    <button id = "ProjectBtn">Projects</button>
                 </div>
             </div>
         </header>
@@ -56,8 +57,12 @@
 
             <h3>Contact</h3>
             <div class = "contact">
-                <p>LinkedIn</p>
-                <p>Handshake</p>
+                <p>
+                    <a href = "https://www.linkedin.com/in/shaunak-h-5a7759253">Click Here for LinkedIn!</a>                
+                </p>
+                <p>
+                    <a href = "https://lsu.joinhandshake.com/profiles/shaunakh">Click Here for Handshake!</a>                
+                </p>
                 <p>Click Here for Questions!</p>
             </div>
         </main>
@@ -70,6 +75,10 @@
 
         document.getElementById("EduButton").onclick = function () {
         window.location.href = "education.html";
+        };
+
+        document.getElementById("ProjectBtn").onclick = function () {
+        window.location.href = "projects.html";
         };
     </script>
 

@@ -136,3 +136,8 @@ p{
     font-size: 25px;
     font-weight: medium;
 }
+
+p a{
+    text-decoration: none;
+    color: inherit;
+}
