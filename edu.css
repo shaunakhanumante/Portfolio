@@ -1,9 +1,10 @@
 *{
     font-family: 'Times New Roman', Times, serif;
 }
+
 body{
     margin: 0px;
-    background-color: black;
+    background-color: rgb(36, 35, 31);
 }
 
 .navbar{
